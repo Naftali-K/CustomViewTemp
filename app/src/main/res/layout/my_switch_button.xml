@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/setting_switch_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:background="@drawable/setting_custom_switch_with_blue_border">
+
+        <TextView
+            android:id="@+id/color_customization_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/logo_customization_text_view"
+            android:maxLines="1"
+            android:background="@drawable/setting_custom_switch_on"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Switch One"/>
+
+        <TextView
+            android:id="@+id/logo_customization_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/color_customization_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:maxLines="1"
+            android:background="@drawable/setting_custom_switch_off"
+            android:textColor="@color/blue"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Switch Two"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
