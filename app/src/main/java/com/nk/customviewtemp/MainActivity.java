@@ -8,6 +8,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
+/**
+ * Video lessons
+ * https://youtu.be/aTDjQZEIQe8?si=Y6dlJ_X3YgVoVSzO - 1 video
+ * https://youtu.be/qK_KfNBjhjA?si=C2jHzJxo3Rv9wtyw - 2 video
+ * https://youtu.be/CnDeIh-xILA?si=p8nyM1BRt3iMVFgC - 3 video
+ * https://youtu.be/gJ-z7kP3tZw?si=UKHPlevA-M3yN4UW - 4 video
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private CustomViewTags tagCustomView;

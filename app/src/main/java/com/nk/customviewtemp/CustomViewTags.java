@@ -16,7 +16,6 @@ import androidx.annotation.Nullable;
  */
 public class CustomViewTags extends LinearLayout {
 
-    private View view;
     private LinearLayout container;
     private TextView textView;
     private ImageView image;
@@ -46,8 +45,8 @@ public class CustomViewTags extends LinearLayout {
     }
 
     private void init(@Nullable AttributeSet attrs) {
-        view = inflate(getContext(), R.layout.custom_view_tags, this);
-        setReferences(view);
+        inflate(getContext(), R.layout.custom_view_tags, this);
+        setReferences();
 
         if (attrs != null) {
             TypedArray array = getContext().obtainStyledAttributes(attrs, R.styleable.CustomViewTags);
@@ -78,10 +77,10 @@ public class CustomViewTags extends LinearLayout {
         });
     }
 
-    private void setReferences(View view) {
-        container = view.findViewById(R.id.container);
-        textView = view.findViewById(R.id.text);
-        image = view.findViewById(R.id.image);
+    private void setReferences() {
+        container = findViewById(R.id.container);
+        textView = findViewById(R.id.text);
+        image = findViewById(R.id.image);
     }
 
     public void setTextView(String text) {
